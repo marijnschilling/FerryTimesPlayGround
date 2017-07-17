@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D197B0CF29D567BD3F4D2B82 /* DepartureTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */; };
+		D197B8BDBAE4938F0F029298 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */; };
+		D197B9C56876813548513F2C /* DepartureTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */; };
+		D197BC2D8CA6160E8690FC7B /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */; };
 		E6DD5B0E1F1D442800290559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B0D1F1D442800290559 /* AppDelegate.swift */; };
 		E6DD5B101F1D442800290559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B0F1F1D442800290559 /* ViewController.swift */; };
 		E6DD5B131F1D442800290559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DD5B111F1D442800290559 /* Main.storyboard */; };
@@ -26,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureTimes.swift; sourceTree = "<group>"; };
+		D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
 		E6DD5B0A1F1D442800290559 /* FerryTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FerryTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DD5B0D1F1D442800290559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6DD5B0F1F1D442800290559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,8 @@
 				E6DD5B141F1D442800290559 /* Assets.xcassets */,
 				E6DD5B161F1D442800290559 /* LaunchScreen.storyboard */,
 				E6DD5B191F1D442800290559 /* Info.plist */,
+				D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */,
+				D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */,
 			);
 			path = FerryTimes;
 			sourceTree = "<group>";
@@ -203,6 +211,8 @@
 			files = (
 				E6DD5B101F1D442800290559 /* ViewController.swift in Sources */,
 				E6DD5B0E1F1D442800290559 /* AppDelegate.swift in Sources */,
+				D197B9C56876813548513F2C /* DepartureTimes.swift in Sources */,
+				D197BC2D8CA6160E8690FC7B /* Date+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6DD5B231F1D442800290559 /* FerryTimesTests.swift in Sources */,
+				D197B0CF29D567BD3F4D2B82 /* DepartureTimes.swift in Sources */,
+				D197B8BDBAE4938F0F029298 /* Date+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

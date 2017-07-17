@@ -8,18 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController : UIViewController {
+
+    lazy var timeLabel: UILabel = {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 44))
+        label.text = "Hello World!"
+        label.textColor = .black
+
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        view.addSubview(timeLabel)
+
+        let departureTimes = DepartureTimes(line: .buiksloterwegCentraalStation)
+        let timeTillNearestDeparture = departureTimes.timeTillNearestDeparture()
+
+        self.timeLabel.text = "\(timeTillNearestDeparture)"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

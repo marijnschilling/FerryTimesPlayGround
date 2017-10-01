@@ -12,8 +12,8 @@
 		D197B9C36DF8538ED4F1CFC6 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BA8CA09FA76219D3F5A7 /* LineView.swift */; };
 		D197B9C56876813548513F2C /* DepartureTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */; };
 		D197BC2D8CA6160E8690FC7B /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */; };
-		E605E8A11F81739F0033A009 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605E8971F816E9E0033A009 /* SweetUIKit.framework */; };
-		E605E8A21F81739F0033A009 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605E8951F816E9B0033A009 /* TinyConstraints.framework */; };
+		E66678691F817A15002E911F /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66678671F817A15002E911F /* TinyConstraints.framework */; };
+		E666786A1F817A15002E911F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66678681F817A15002E911F /* SweetUIKit.framework */; };
 		E6DD5B0E1F1D442800290559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B0D1F1D442800290559 /* AppDelegate.swift */; };
 		E6DD5B101F1D442800290559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B0F1F1D442800290559 /* ViewController.swift */; };
 		E6DD5B131F1D442800290559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DD5B111F1D442800290559 /* Main.storyboard */; };
@@ -36,8 +36,8 @@
 		D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureTimes.swift; sourceTree = "<group>"; };
 		D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
 		D197BA8CA09FA76219D3F5A7 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
-		E605E8951F816E9B0033A009 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = ../Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
-		E605E8971F816E9E0033A009 /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetUIKit.framework; path = ../Carthage/Build/iOS/SweetUIKit.framework; sourceTree = "<group>"; };
+		E66678671F817A15002E911F /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		E66678681F817A15002E911F /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetUIKit.framework; path = Carthage/Build/iOS/SweetUIKit.framework; sourceTree = "<group>"; };
 		E6DD5B0A1F1D442800290559 /* FerryTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FerryTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DD5B0D1F1D442800290559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6DD5B0F1F1D442800290559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E605E8A21F81739F0033A009 /* TinyConstraints.framework in Frameworks */,
-				E605E8A11F81739F0033A009 /* SweetUIKit.framework in Frameworks */,
+				E66678691F817A15002E911F /* TinyConstraints.framework in Frameworks */,
+				E666786A1F817A15002E911F /* SweetUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +73,8 @@
 		E605E8941F816E9B0033A009 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E605E8971F816E9E0033A009 /* SweetUIKit.framework */,
-				E605E8951F816E9B0033A009 /* TinyConstraints.framework */,
+				E66678681F817A15002E911F /* SweetUIKit.framework */,
+				E66678671F817A15002E911F /* TinyConstraints.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -381,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -397,6 +397,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/Carthage/Build/iOS",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FerryTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -414,6 +415,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/Carthage/Build/iOS",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FerryTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

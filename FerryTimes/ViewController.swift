@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TinyConstraints
 
 class ViewController : UIViewController {
     static let lineViewHeight: CGFloat = 220.0
@@ -17,22 +18,17 @@ class ViewController : UIViewController {
         return lineView
     }()
 
-    lazy var timeLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 44))
-        label.text = "Hello World!"
-        label.textColor = .black
-
-        return label
-    }()
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.addSubview(timeLabel)
 
         let departureTimes = DepartureTimes(line: .buiksloterwegCentraalStation)
         let timeTillNearestDeparture = departureTimes.timeTillNearestDeparture()
 
-        self.timeLabel.text = "\(timeTillNearestDeparture)"
+        view.addSubview(lineView)
+
+        lineView.top(to: view)
+        lineView.right(to: view)
+        lineView.left(to: view)
+        lineView.height(ViewController.lineViewHeight)
     }
 }

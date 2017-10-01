@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D197B0CF29D567BD3F4D2B82 /* DepartureTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */; };
+		D197B4A49E4C00447B233487 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BD085BE2C0D70FC9C672 /* Theme.swift */; };
 		D197B8BDBAE4938F0F029298 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */; };
 		D197B9C36DF8538ED4F1CFC6 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BA8CA09FA76219D3F5A7 /* LineView.swift */; };
 		D197B9C56876813548513F2C /* DepartureTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */; };
@@ -36,6 +37,7 @@
 		D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureTimes.swift; sourceTree = "<group>"; };
 		D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
 		D197BA8CA09FA76219D3F5A7 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		D197BD085BE2C0D70FC9C672 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		E66678671F817A15002E911F /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
 		E66678681F817A15002E911F /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetUIKit.framework; path = Carthage/Build/iOS/SweetUIKit.framework; sourceTree = "<group>"; };
 		E6DD5B0A1F1D442800290559 /* FerryTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FerryTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 				D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */,
 				D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */,
 				D197BA8CA09FA76219D3F5A7 /* LineView.swift */,
+				D197BD085BE2C0D70FC9C672 /* Theme.swift */,
 			);
 			path = FerryTimes;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				D197B9C56876813548513F2C /* DepartureTimes.swift in Sources */,
 				D197BC2D8CA6160E8690FC7B /* Date+Helpers.swift in Sources */,
 				D197B9C36DF8538ED4F1CFC6 /* LineView.swift in Sources */,
+				D197B4A49E4C00447B233487 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,8 @@
 		D197B9C36DF8538ED4F1CFC6 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BA8CA09FA76219D3F5A7 /* LineView.swift */; };
 		D197B9C56876813548513F2C /* DepartureTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */; };
 		D197BC2D8CA6160E8690FC7B /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */; };
+		E605E8A11F81739F0033A009 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605E8971F816E9E0033A009 /* SweetUIKit.framework */; };
+		E605E8A21F81739F0033A009 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605E8951F816E9B0033A009 /* TinyConstraints.framework */; };
 		E6DD5B0E1F1D442800290559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B0D1F1D442800290559 /* AppDelegate.swift */; };
 		E6DD5B101F1D442800290559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B0F1F1D442800290559 /* ViewController.swift */; };
 		E6DD5B131F1D442800290559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DD5B111F1D442800290559 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		D197B20ED27CCD80C05D77C3 /* DepartureTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureTimes.swift; sourceTree = "<group>"; };
 		D197B7ECBC139D05D514BEBF /* Date+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
 		D197BA8CA09FA76219D3F5A7 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		E605E8951F816E9B0033A009 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = ../Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		E605E8971F816E9E0033A009 /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetUIKit.framework; path = ../Carthage/Build/iOS/SweetUIKit.framework; sourceTree = "<group>"; };
 		E6DD5B0A1F1D442800290559 /* FerryTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FerryTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DD5B0D1F1D442800290559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6DD5B0F1F1D442800290559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E605E8A21F81739F0033A009 /* TinyConstraints.framework in Frameworks */,
+				E605E8A11F81739F0033A009 /* SweetUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +70,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E605E8941F816E9B0033A009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E605E8971F816E9E0033A009 /* SweetUIKit.framework */,
+				E605E8951F816E9B0033A009 /* TinyConstraints.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E6DD5B011F1D442800290559 = {
 			isa = PBXGroup;
 			children = (
 				E6DD5B0C1F1D442800290559 /* FerryTimes */,
 				E6DD5B211F1D442800290559 /* FerryTimesTests */,
 				E6DD5B0B1F1D442800290559 /* Products */,
+				E605E8941F816E9B0033A009 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +133,7 @@
 				E6DD5B061F1D442800290559 /* Sources */,
 				E6DD5B071F1D442800290559 /* Frameworks */,
 				E6DD5B081F1D442800290559 /* Resources */,
+				E605E89E1F816F7B0033A009 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +223,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E605E89E1F816F7B0033A009 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TinyConstraints.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SweetUIKit.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6DD5B061F1D442800290559 /* Sources */ = {
@@ -358,6 +394,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = FerryTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.FerryTimes;
@@ -371,6 +411,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = FerryTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.FerryTimes;
@@ -428,6 +472,7 @@
 				E6DD5B291F1D442800290559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6DD5B2A1F1D442800290559 /* Build configuration list for PBXNativeTarget "FerryTimesTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +481,7 @@
 				E6DD5B2C1F1D442800290559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,7 +27,6 @@ class DepartureTimes {
 
         switch line {
         case .buiksloterwegCentraalStation:
-
             departureTimes = parseString(buiksloterwegCentraalStation)
         case .centraalStationBuiksloterweg:
             departureTimes = parseString(centraalStationBuiksloterweg)

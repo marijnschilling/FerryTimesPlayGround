@@ -9,6 +9,13 @@
 import UIKit
 
 class ViewController : UIViewController {
+    static let lineViewHeight: CGFloat = 220.0
+
+    fileprivate lazy var lineView: LineView = {
+        let lineView = LineView()
+
+        return lineView
+    }()
 
     lazy var timeLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 44))

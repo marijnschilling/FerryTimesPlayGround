@@ -72,7 +72,5 @@ class LineView: UIView {
 
         addSubview(switchButton)
 
-        toTextLabel.top(to:)
-
     }
 }

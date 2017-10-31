@@ -21,8 +21,7 @@ class FerriesController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let departureTimes = DepartureTimes(line: .buiksloterwegCentraalStation)
-//        let timeTillNearestDeparture = departureTimes.timeTillNearestDeparture()
+        view.backgroundColor = .white
 
         view.addSubview(lineView)
 

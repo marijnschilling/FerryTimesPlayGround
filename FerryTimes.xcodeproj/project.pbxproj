@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D197B4A49E4C00447B233487 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BD085BE2C0D70FC9C672 /* Theme.swift */; };
-		D197B9C36DF8538ED4F1CFC6 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BA8CA09FA76219D3F5A7 /* LineView.swift */; };
+		D197B3695234AC89FBD60917 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D197B136BAE897499A531F70 /* LaunchScreen.xib */; };
+		D197B6AC37BCEE7B70FFC751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BB875CDC326C54770751 /* AppDelegate.swift */; };
+		D197B8F495875DBEC2945590 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BEF7E0B7A84898F799BB /* Theme.swift */; };
+		D197BA702DFF51DB07130A4A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B4EB548AB04F71373DCC /* LineView.swift */; };
+		D197BC25383540529F5A001E /* UIViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BE8E3D3D1B2F75500E30 /* UIViewController+Layout.swift */; };
+		D197BCE787D4535B209B8F5C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D197B7467341A3BBDF5E8CCE /* DataModel.xcdatamodeld */; };
+		D197BD4929A7E0FD0C18331A /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B9AE23537B7291D4F606 /* Fetcher.swift */; };
+		D197BF0289CF366F7E085D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D197B650B8E40ECDE2877E99 /* Assets.xcassets */; };
+		D197BF7D1D6F640243C70923 /* FerriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B545ADC25AD2C544C8B8 /* FerriesController.swift */; };
 		E66678691F817A15002E911F /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66678671F817A15002E911F /* TinyConstraints.framework */; };
 		E666786A1F817A15002E911F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66678681F817A15002E911F /* SweetUIKit.framework */; };
-		E6DD5B0E1F1D442800290559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B0D1F1D442800290559 /* AppDelegate.swift */; };
-		E6DD5B101F1D442800290559 /* FerriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B0F1F1D442800290559 /* FerriesController.swift */; };
-		E6DD5B151F1D442800290559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6DD5B141F1D442800290559 /* Assets.xcassets */; };
 		E6DD5B231F1D442800290559 /* FerryTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B221F1D442800290559 /* FerryTimesTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,15 +32,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D197BA8CA09FA76219D3F5A7 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
-		D197BD085BE2C0D70FC9C672 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D197B032B98FD9AFA3D8DEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		D197B0C25AD62FEC4608845A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		D197B4EB548AB04F71373DCC /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		D197B545ADC25AD2C544C8B8 /* FerriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FerriesController.swift; sourceTree = "<group>"; };
+		D197B650B8E40ECDE2877E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D197B6773A5625A19D55EA24 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		D197B9AE23537B7291D4F606 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		D197BB875CDC326C54770751 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D197BE8E3D3D1B2F75500E30 /* UIViewController+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Layout.swift"; sourceTree = "<group>"; };
+		D197BEF7E0B7A84898F799BB /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		E66678671F817A15002E911F /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
 		E66678681F817A15002E911F /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetUIKit.framework; path = Carthage/Build/iOS/SweetUIKit.framework; sourceTree = "<group>"; };
 		E6DD5B0A1F1D442800290559 /* FerryTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FerryTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6DD5B0D1F1D442800290559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6DD5B0F1F1D442800290559 /* FerriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerriesController.swift; sourceTree = "<group>"; };
-		E6DD5B141F1D442800290559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E6DD5B191F1D442800290559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6DD5B1E1F1D442800290559 /* FerryTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FerryTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DD5B221F1D442800290559 /* FerryTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerryTimesTests.swift; sourceTree = "<group>"; };
 		E6DD5B241F1D442800290559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +70,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D197B0AEC328FB22CA831FF0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D197B545ADC25AD2C544C8B8 /* FerriesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D197B0B5A1ADFD95815D818E /* Fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				D197B9AE23537B7291D4F606 /* Fetcher.swift */,
+			);
+			path = Fetchers;
+			sourceTree = "<group>";
+		};
+		D197B2CEEDFDFD1A83944078 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D197B7467341A3BBDF5E8CCE /* DataModel.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D197B3ADE66B81FEE4FC1985 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D197BEEC607C34581183FBAA /* Root */,
+				D197BACE4AA5387CE9285B0B /* Views */,
+				D197B0AEC328FB22CA831FF0 /* Controllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D197B60606EFFC008654055E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D197B0B5A1ADFD95815D818E /* Fetchers */,
+				D197B9B2057260E087D770E5 /* Extensions */,
+				D197B2CEEDFDFD1A83944078 /* Models */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D197B9B2057260E087D770E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D197BEF7E0B7A84898F799BB /* Theme.swift */,
+				D197BE8E3D3D1B2F75500E30 /* UIViewController+Layout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D197BACE4AA5387CE9285B0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D197B4EB548AB04F71373DCC /* LineView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D197BB1870E0E4974B30144F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D197BC4F42DFE3B4EF139A50 /* Base.lproj */,
+				D197B0C25AD62FEC4608845A /* Info.plist */,
+				D197B650B8E40ECDE2877E99 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D197BB1C3C5B6FE30D959491 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D197B3ADE66B81FEE4FC1985 /* Source */,
+				D197BB1870E0E4974B30144F /* Resources */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D197BC4F42DFE3B4EF139A50 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D197B136BAE897499A531F70 /* LaunchScreen.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		D197BEEC607C34581183FBAA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				D197BB875CDC326C54770751 /* AppDelegate.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		E605E8941F816E9B0033A009 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,12 +197,8 @@
 		E6DD5B0C1F1D442800290559 /* FerryTimes */ = {
 			isa = PBXGroup;
 			children = (
-				E6DD5B0D1F1D442800290559 /* AppDelegate.swift */,
-				E6DD5B0F1F1D442800290559 /* FerriesController.swift */,
-				E6DD5B141F1D442800290559 /* Assets.xcassets */,
-				E6DD5B191F1D442800290559 /* Info.plist */,
-				D197BA8CA09FA76219D3F5A7 /* LineView.swift */,
-				D197BD085BE2C0D70FC9C672 /* Theme.swift */,
+				D197BB1C3C5B6FE30D959491 /* iOS */,
+				D197B60606EFFC008654055E /* Library */,
 			);
 			path = FerryTimes;
 			sourceTree = "<group>";
@@ -198,7 +298,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6DD5B151F1D442800290559 /* Assets.xcassets in Resources */,
+				D197B3695234AC89FBD60917 /* LaunchScreen.xib in Resources */,
+				D197BF0289CF366F7E085D91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,10 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6DD5B101F1D442800290559 /* FerriesController.swift in Sources */,
-				E6DD5B0E1F1D442800290559 /* AppDelegate.swift in Sources */,
-				D197B9C36DF8538ED4F1CFC6 /* LineView.swift in Sources */,
-				D197B4A49E4C00447B233487 /* Theme.swift in Sources */,
+				D197BD4929A7E0FD0C18331A /* Fetcher.swift in Sources */,
+				D197BCE787D4535B209B8F5C /* DataModel.xcdatamodeld in Sources */,
+				D197B8F495875DBEC2945590 /* Theme.swift in Sources */,
+				D197B6AC37BCEE7B70FFC751 /* AppDelegate.swift in Sources */,
+				D197BA702DFF51DB07130A4A /* LineView.swift in Sources */,
+				D197BF7D1D6F640243C70923 /* FerriesController.swift in Sources */,
+				D197BC25383540529F5A001E /* UIViewController+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +363,17 @@
 			targetProxy = E6DD5B1F1F1D442800290559 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D197B136BAE897499A531F70 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D197B032B98FD9AFA3D8DEFB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E6DD5B251F1D442800290559 /* Debug */ = {
@@ -377,7 +492,7 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = FerryTimes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FerryTimes/iOS/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.FerryTimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,7 +511,7 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = FerryTimes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FerryTimes/iOS/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.FerryTimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,6 +580,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D197B7467341A3BBDF5E8CCE /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D197B6773A5625A19D55EA24 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = D197B6773A5625A19D55EA24 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E6DD5B021F1D442800290559 /* Project object */;
 }

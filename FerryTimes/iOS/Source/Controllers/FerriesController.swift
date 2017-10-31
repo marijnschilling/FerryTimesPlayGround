@@ -39,5 +39,13 @@ class FerriesController : UIViewController {
 
         view.addSubview(loadView)
         loadView.edges(to: view)
+
+        loadView.animate() { _ in
+            UIView.animate(withDuration: 0.2, animations: {
+                self.loadView.alpha = 0.0
+            }, completion: { _ in
+                self.loadView.removeFromSuperview()
+             })
+        }
     }
 }

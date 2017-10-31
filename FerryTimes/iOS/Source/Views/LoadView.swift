@@ -41,7 +41,15 @@ class LoadView: UIView {
         ferryImageView.centerYToSuperview()
 
         wavesImageView.size(CGSize(width: 275, height: 33))
-        wavesImageView.bottom(to: ferryImageView)
-        wavesImageView.right(to: ferryImageView)
+        wavesImageView.bottom(to: ferryImageView, offset: 20)
+        wavesImageView.right(to: ferryImageView, offset: -26)
+    }
+
+    func animate(completion: @escaping (Bool) -> Void) {
+        UIView.animate(withDuration: 3, animations: {
+           self.wavesImageView.transform = CGAffineTransform(translationX: 128, y: 0)
+        }, completion: { success in
+            completion(success)
+        })
     }
 }

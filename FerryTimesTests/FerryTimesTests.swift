@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import FerryTimes
 
 class FerryTimesTests: XCTestCase {
     

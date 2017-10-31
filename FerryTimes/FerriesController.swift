@@ -9,7 +9,7 @@
 import UIKit
 import TinyConstraints
 
-class ViewController : UIViewController {
+class FerriesController : UIViewController {
     static let lineViewHeight: CGFloat = 220.0
 
     fileprivate lazy var lineView: LineView = {
@@ -29,6 +29,6 @@ class ViewController : UIViewController {
         lineView.top(to: view)
         lineView.right(to: view)
         lineView.left(to: view)
-        lineView.height(ViewController.lineViewHeight, relation: .equalOrGreater)
+        lineView.height(FerriesController.lineViewHeight, relation: .equalOrGreater)
     }
 }

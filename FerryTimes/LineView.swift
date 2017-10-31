@@ -9,7 +9,7 @@ import SweetUIKit
 import QuartzCore
 
 class LineView: UIView {
-    fileprivate lazy var fromTextLabel: UILabel = {
+    private lazy var fromTextLabel: UILabel = {
         let fromTextLabel = UILabel(withAutoLayout: true)
         fromTextLabel.font = .preferredFont(forTextStyle: .body)
         fromTextLabel.text = "Van"
@@ -18,29 +18,32 @@ class LineView: UIView {
         return fromTextLabel
     }()
 
-    fileprivate lazy var fromStationLabel: UILabel = {
+    private lazy var fromStationLabel: UILabel = {
         let fromStationLabel = UILabel()
-        fromStationLabel.font = .preferredFont(forTextStyle: .title1)
-        fromStationLabel.text = "Amsterdam Centraal"
+        fromStationLabel.font = UIFontMetrics(forTextStyle: .title1).scaledFont(for: .systemFont(ofSize: 28), maximumPointSize: 60)
+        fromStationLabel.text = "Centraal Station"
         fromStationLabel.textColor = Theme.lightTextColor
+        fromStationLabel.adjustsFontForContentSizeCategory = true
 
         return fromStationLabel
     }()
 
-    fileprivate lazy var toTextLabel: UILabel = {
+    private lazy var toTextLabel: UILabel = {
         let toTextLabel = UILabel()
         toTextLabel.font = .preferredFont(forTextStyle: .body)
         toTextLabel.text = "Naar"
         toTextLabel.textColor = Theme.lightTextColor
+        toTextLabel.adjustsFontForContentSizeCategory = true
 
         return toTextLabel
     }()
 
-    fileprivate lazy var toStationLabel: UILabel = {
+    private lazy var toStationLabel: UILabel = {
         let toStationLabel = UILabel()
-        toStationLabel.font = .preferredFont(forTextStyle: .title1)
+        toStationLabel.font = UIFontMetrics(forTextStyle: .title1).scaledFont(for: .systemFont(ofSize: 28), maximumPointSize: 60)
         toStationLabel.text = "Buiksloterweg"
         toStationLabel.textColor = Theme.lightTextColor
+        toStationLabel.adjustsFontForContentSizeCategory = true
 
         return toStationLabel
     }()
@@ -69,7 +72,7 @@ class LineView: UIView {
     }
 
     private func addSubviewsAndConstraints() {
-        let buttonSize: CGFloat = 48.0
+        let buttonSize: CGFloat = 48.0 
         let margin: CGFloat = 24.0
 
         addSubview(toTextLabel)
@@ -86,7 +89,7 @@ class LineView: UIView {
         fromTextLabel.right(to: self, offset: -margin, relation: .equalOrGreater)
 
         fromStationLabel.topToBottom(of: fromTextLabel, offset: 5)
-        fromStationLabel.height(21, relation: .equalOrGreater)
+        fromStationLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
         fromStationLabel.left(to: self, offset: margin)
         fromStationLabel.right(to: self, offset: -margin, relation: .equalOrGreater)
 
@@ -98,13 +101,14 @@ class LineView: UIView {
         switchButton.centerY(to: self, offset: 20)
 
         toTextLabel.topToBottom(of: fromStationLabel, offset: margin)
-        toTextLabel.height(21, relation: .equalOrGreater)
+        toTextLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
         toTextLabel.left(to: self, offset: margin)
         toTextLabel.right(to: self, offset: -margin, relation: .equalOrGreater)
 
         toStationLabel.topToBottom(of: toTextLabel, offset: 5)
-        toStationLabel.height(21, relation: .equalOrGreater)
+        toStationLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
         toStationLabel.left(to: self, offset: margin)
         toStationLabel.right(to: self, offset: -margin, relation: .equalOrGreater)
+        toStationLabel.bottom(to: self, offset: -margin)
     }
 }

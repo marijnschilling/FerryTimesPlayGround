@@ -21,14 +21,14 @@ class ViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let departureTimes = DepartureTimes(line: .buiksloterwegCentraalStation)
-        let timeTillNearestDeparture = departureTimes.timeTillNearestDeparture()
+//        let departureTimes = DepartureTimes(line: .buiksloterwegCentraalStation)
+//        let timeTillNearestDeparture = departureTimes.timeTillNearestDeparture()
 
         view.addSubview(lineView)
 
         lineView.top(to: view)
         lineView.right(to: view)
         lineView.left(to: view)
-        lineView.height(ViewController.lineViewHeight)
+        lineView.height(ViewController.lineViewHeight, relation: .equalOrGreater)
     }
 }

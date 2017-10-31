@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D197B3695234AC89FBD60917 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D197B136BAE897499A531F70 /* LaunchScreen.xib */; };
+		D197B6AC37BCEE7B70FFC751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BB875CDC326C54770751 /* AppDelegate.swift */; };
+		D197B8F495875DBEC2945590 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BEF7E0B7A84898F799BB /* Theme.swift */; };
+		D197BA702DFF51DB07130A4A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B4EB548AB04F71373DCC /* LineView.swift */; };
+		D197BC25383540529F5A001E /* UIViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BE8E3D3D1B2F75500E30 /* UIViewController+Layout.swift */; };
+		D197BCE787D4535B209B8F5C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D197B7467341A3BBDF5E8CCE /* DataModel.xcdatamodeld */; };
+		D197BD4929A7E0FD0C18331A /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B9AE23537B7291D4F606 /* Fetcher.swift */; };
+		D197BF0289CF366F7E085D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D197B650B8E40ECDE2877E99 /* Assets.xcassets */; };
+		D197BF7D1D6F640243C70923 /* FerriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B545ADC25AD2C544C8B8 /* FerriesController.swift */; };
+		E66678691F817A15002E911F /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66678671F817A15002E911F /* TinyConstraints.framework */; };
+		E666786A1F817A15002E911F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66678681F817A15002E911F /* SweetUIKit.framework */; };
+		E6DD5B231F1D442800290559 /* FerryTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B221F1D442800290559 /* FerryTimesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6DD5B1F1F1D442800290559 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6DD5B021F1D442800290559 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6DD5B091F1D442800290559;
+			remoteInfo = FerryTimes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D197B032B98FD9AFA3D8DEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		D197B0C25AD62FEC4608845A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		D197B4EB548AB04F71373DCC /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		D197B545ADC25AD2C544C8B8 /* FerriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FerriesController.swift; sourceTree = "<group>"; };
+		D197B650B8E40ECDE2877E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D197B6773A5625A19D55EA24 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		D197B9AE23537B7291D4F606 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		D197BB875CDC326C54770751 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D197BE8E3D3D1B2F75500E30 /* UIViewController+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Layout.swift"; sourceTree = "<group>"; };
+		D197BEF7E0B7A84898F799BB /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E66678671F817A15002E911F /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		E66678681F817A15002E911F /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetUIKit.framework; path = Carthage/Build/iOS/SweetUIKit.framework; sourceTree = "<group>"; };
+		E6DD5B0A1F1D442800290559 /* FerryTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FerryTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6DD5B1E1F1D442800290559 /* FerryTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FerryTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6DD5B221F1D442800290559 /* FerryTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerryTimesTests.swift; sourceTree = "<group>"; };
+		E6DD5B241F1D442800290559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6DD5B071F1D442800290559 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66678691F817A15002E911F /* TinyConstraints.framework in Frameworks */,
+				E666786A1F817A15002E911F /* SweetUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DD5B1B1F1D442800290559 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D197B0AEC328FB22CA831FF0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D197B545ADC25AD2C544C8B8 /* FerriesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D197B0B5A1ADFD95815D818E /* Fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				D197B9AE23537B7291D4F606 /* Fetcher.swift */,
+			);
+			path = Fetchers;
+			sourceTree = "<group>";
+		};
+		D197B2CEEDFDFD1A83944078 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D197B7467341A3BBDF5E8CCE /* DataModel.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D197B3ADE66B81FEE4FC1985 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D197BEEC607C34581183FBAA /* Root */,
+				D197BACE4AA5387CE9285B0B /* Views */,
+				D197B0AEC328FB22CA831FF0 /* Controllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D197B60606EFFC008654055E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D197B0B5A1ADFD95815D818E /* Fetchers */,
+				D197B9B2057260E087D770E5 /* Extensions */,
+				D197B2CEEDFDFD1A83944078 /* Models */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D197B9B2057260E087D770E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D197BEF7E0B7A84898F799BB /* Theme.swift */,
+				D197BE8E3D3D1B2F75500E30 /* UIViewController+Layout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D197BACE4AA5387CE9285B0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D197B4EB548AB04F71373DCC /* LineView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D197BB1870E0E4974B30144F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D197BC4F42DFE3B4EF139A50 /* Base.lproj */,
+				D197B0C25AD62FEC4608845A /* Info.plist */,
+				D197B650B8E40ECDE2877E99 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D197BB1C3C5B6FE30D959491 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D197B3ADE66B81FEE4FC1985 /* Source */,
+				D197BB1870E0E4974B30144F /* Resources */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D197BC4F42DFE3B4EF139A50 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D197B136BAE897499A531F70 /* LaunchScreen.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		D197BEEC607C34581183FBAA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				D197BB875CDC326C54770751 /* AppDelegate.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		E605E8941F816E9B0033A009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E66678681F817A15002E911F /* SweetUIKit.framework */,
+				E66678671F817A15002E911F /* TinyConstraints.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6DD5B011F1D442800290559 = {
+			isa = PBXGroup;
+			children = (
+				E6DD5B0C1F1D442800290559 /* FerryTimes */,
+				E6DD5B211F1D442800290559 /* FerryTimesTests */,
+				E6DD5B0B1F1D442800290559 /* Products */,
+				E605E8941F816E9B0033A009 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6DD5B0B1F1D442800290559 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD5B0A1F1D442800290559 /* FerryTimes.app */,
+				E6DD5B1E1F1D442800290559 /* FerryTimesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6DD5B0C1F1D442800290559 /* FerryTimes */ = {
+			isa = PBXGroup;
+			children = (
+				D197BB1C3C5B6FE30D959491 /* iOS */,
+				D197B60606EFFC008654055E /* Library */,
+			);
+			path = FerryTimes;
+			sourceTree = "<group>";
+		};
+		E6DD5B211F1D442800290559 /* FerryTimesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD5B221F1D442800290559 /* FerryTimesTests.swift */,
+				E6DD5B241F1D442800290559 /* Info.plist */,
+			);
+			path = FerryTimesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6DD5B091F1D442800290559 /* FerryTimes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6DD5B271F1D442800290559 /* Build configuration list for PBXNativeTarget "FerryTimes" */;
+			buildPhases = (
+				E6DD5B061F1D442800290559 /* Sources */,
+				E6DD5B071F1D442800290559 /* Frameworks */,
+				E6DD5B081F1D442800290559 /* Resources */,
+				E605E89E1F816F7B0033A009 /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FerryTimes;
+			productName = FerryTimes;
+			productReference = E6DD5B0A1F1D442800290559 /* FerryTimes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6DD5B1D1F1D442800290559 /* FerryTimesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6DD5B2A1F1D442800290559 /* Build configuration list for PBXNativeTarget "FerryTimesTests" */;
+			buildPhases = (
+				E6DD5B1A1F1D442800290559 /* Sources */,
+				E6DD5B1B1F1D442800290559 /* Frameworks */,
+				E6DD5B1C1F1D442800290559 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6DD5B201F1D442800290559 /* PBXTargetDependency */,
+			);
+			name = FerryTimesTests;
+			productName = FerryTimesTests;
+			productReference = E6DD5B1E1F1D442800290559 /* FerryTimesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6DD5B021F1D442800290559 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Bakken & Bæck";
+				TargetAttributes = {
+					E6DD5B091F1D442800290559 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 29X3GG489T;
+						ProvisioningStyle = Automatic;
+					};
+					E6DD5B1D1F1D442800290559 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 29X3GG489T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E6DD5B091F1D442800290559;
+					};
+				};
+			};
+			buildConfigurationList = E6DD5B051F1D442800290559 /* Build configuration list for PBXProject "FerryTimes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6DD5B011F1D442800290559;
+			productRefGroup = E6DD5B0B1F1D442800290559 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6DD5B091F1D442800290559 /* FerryTimes */,
+				E6DD5B1D1F1D442800290559 /* FerryTimesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6DD5B081F1D442800290559 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D197B3695234AC89FBD60917 /* LaunchScreen.xib in Resources */,
+				D197BF0289CF366F7E085D91 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DD5B1C1F1D442800290559 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E605E89E1F816F7B0033A009 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TinyConstraints.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SweetUIKit.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6DD5B061F1D442800290559 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D197BD4929A7E0FD0C18331A /* Fetcher.swift in Sources */,
+				D197BCE787D4535B209B8F5C /* DataModel.xcdatamodeld in Sources */,
+				D197B8F495875DBEC2945590 /* Theme.swift in Sources */,
+				D197B6AC37BCEE7B70FFC751 /* AppDelegate.swift in Sources */,
+				D197BA702DFF51DB07130A4A /* LineView.swift in Sources */,
+				D197BF7D1D6F640243C70923 /* FerriesController.swift in Sources */,
+				D197BC25383540529F5A001E /* UIViewController+Layout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DD5B1A1F1D442800290559 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DD5B231F1D442800290559 /* FerryTimesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6DD5B201F1D442800290559 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6DD5B091F1D442800290559 /* FerryTimes */;
+			targetProxy = E6DD5B1F1F1D442800290559 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D197B136BAE897499A531F70 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D197B032B98FD9AFA3D8DEFB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6DD5B251F1D442800290559 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6DD5B261F1D442800290559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6DD5B281F1D442800290559 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FerryTimes/iOS/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.FerryTimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		E6DD5B291F1D442800290559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FerryTimes/iOS/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.FerryTimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		E6DD5B2B1F1D442800290559 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				INFOPLIST_FILE = FerryTimesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.FerryTimesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FerryTimes.app/FerryTimes";
+			};
+			name = Debug;
+		};
+		E6DD5B2C1F1D442800290559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				INFOPLIST_FILE = FerryTimesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.FerryTimesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FerryTimes.app/FerryTimes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6DD5B051F1D442800290559 /* Build configuration list for PBXProject "FerryTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6DD5B251F1D442800290559 /* Debug */,
+				E6DD5B261F1D442800290559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6DD5B271F1D442800290559 /* Build configuration list for PBXNativeTarget "FerryTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6DD5B281F1D442800290559 /* Debug */,
+				E6DD5B291F1D442800290559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6DD5B2A1F1D442800290559 /* Build configuration list for PBXNativeTarget "FerryTimesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6DD5B2B1F1D442800290559 /* Debug */,
+				E6DD5B2C1F1D442800290559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D197B7467341A3BBDF5E8CCE /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D197B6773A5625A19D55EA24 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = D197B6773A5625A19D55EA24 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E6DD5B021F1D442800290559 /* Project object */;
+}

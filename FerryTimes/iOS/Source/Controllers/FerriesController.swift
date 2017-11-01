@@ -12,6 +12,13 @@ import TinyConstraints
 class FerriesController : UIViewController {
     static let lineViewHeight: CGFloat = 220.0
 
+    fileprivate lazy var loadView: LoadView = {
+        let loadView = LoadView()
+
+        return loadView
+    }()
+
+
     fileprivate lazy var lineView: LineView = {
         let lineView = LineView()
 
@@ -29,5 +36,19 @@ class FerriesController : UIViewController {
         lineView.right(to: view)
         lineView.left(to: view)
         lineView.height(FerriesController.lineViewHeight, relation: .equalOrGreater)
+
+        view.addSubview(loadView)
+        loadView.edges(to: view)
+
+        loadView.animate()
+
+        // I will get the ferry data from the api here before i stop animating ✌️
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.loadView.alpha = 0.0
+            }, completion: { success in
+                self.loadView.stopAnimating()
+            })
+        }
     }
 }

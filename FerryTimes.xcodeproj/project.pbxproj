@@ -16,6 +16,7 @@
 		D197BD4929A7E0FD0C18331A /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B9AE23537B7291D4F606 /* Fetcher.swift */; };
 		D197BF0289CF366F7E085D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D197B650B8E40ECDE2877E99 /* Assets.xcassets */; };
 		D197BF7D1D6F640243C70923 /* FerriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B545ADC25AD2C544C8B8 /* FerriesController.swift */; };
+		D197BFA2EC1F63F725B7B0A6 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B724F6D645F3C79D911D /* LoadView.swift */; };
 		E66678691F817A15002E911F /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66678671F817A15002E911F /* TinyConstraints.framework */; };
 		E666786A1F817A15002E911F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66678681F817A15002E911F /* SweetUIKit.framework */; };
 		E6DD5B231F1D442800290559 /* FerryTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5B221F1D442800290559 /* FerryTimesTests.swift */; };
@@ -38,6 +39,7 @@
 		D197B545ADC25AD2C544C8B8 /* FerriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FerriesController.swift; sourceTree = "<group>"; };
 		D197B650B8E40ECDE2877E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D197B6773A5625A19D55EA24 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		D197B724F6D645F3C79D911D /* LoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		D197B9AE23537B7291D4F606 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 		D197BB875CDC326C54770751 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D197BE8E3D3D1B2F75500E30 /* UIViewController+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Layout.swift"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				D197B4EB548AB04F71373DCC /* LineView.swift */,
+				D197B724F6D645F3C79D911D /* LoadView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				D197BA702DFF51DB07130A4A /* LineView.swift in Sources */,
 				D197BF7D1D6F640243C70923 /* FerriesController.swift in Sources */,
 				D197BC25383540529F5A001E /* UIViewController+Layout.swift in Sources */,
+				D197BFA2EC1F63F725B7B0A6 /* LoadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

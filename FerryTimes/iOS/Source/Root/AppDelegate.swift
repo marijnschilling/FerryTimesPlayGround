@@ -8,10 +8,14 @@ class AppDelegate: UIResponder {
 
 extension AppDelegate: UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
         window = UIWindow(frame: UIScreen.main.bounds)
         guard let window = self.window else { fatalError("Window not found") }
 
-       window.rootViewController = FerriesController()
+        UIApplication.shared.statusBarStyle = .lightContent
+        UIApplication.shared.setStatusBarHidden(false, with: .fade)
+
+        window.rootViewController = FerriesController()
         window.makeKeyAndVisible()
 
         return true

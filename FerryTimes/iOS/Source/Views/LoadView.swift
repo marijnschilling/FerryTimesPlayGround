@@ -28,7 +28,6 @@ class LoadView: UIView {
         super.layoutSubviews()
 
         backgroundColor = Theme.buiksloterwegveerColor
-
         addSubviewsAndConstraints()
     }
 
@@ -45,11 +44,14 @@ class LoadView: UIView {
         wavesImageView.right(to: ferryImageView, offset: -26)
     }
 
-    func animate(completion: @escaping (Bool) -> Void) {
-        UIView.animate(withDuration: 3, animations: {
+    func animate() {
+        UIView.animate(withDuration: 3, delay: 0, options: [.repeat, .autoreverse], animations: {
            self.wavesImageView.transform = CGAffineTransform(translationX: 128, y: 0)
-        }, completion: { success in
-            completion(success)
-        })
+        }, completion: nil)
+    }
+
+    func stopAnimating() {
+        wavesImageView.layer.removeAllAnimations()
+        removeFromSuperview()
     }
 }

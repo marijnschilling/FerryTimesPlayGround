@@ -40,12 +40,15 @@ class FerriesController : UIViewController {
         view.addSubview(loadView)
         loadView.edges(to: view)
 
-        loadView.animate() { _ in
+        loadView.animate()
+
+        // I will get the ferry data from the api here before i stop animating ✌️
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             UIView.animate(withDuration: 0.2, animations: {
                 self.loadView.alpha = 0.0
-            }, completion: { _ in
-                self.loadView.removeFromSuperview()
-             })
+            }, completion: { success in
+                self.loadView.stopAnimating()
+            })
         }
     }
 }

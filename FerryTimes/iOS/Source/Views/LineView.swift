@@ -113,13 +113,15 @@ class LineView: UIView {
     }
 
     @objc func switchAnimation() {
+        switchButton.isEnabled = false
+        
         let fromStationLabelPos = fromStationLabel.frame.origin.y
         let toStationLabelPos = toStationLabel.frame.origin.y
 
         let previousToStation = toStationLabel.text
         let previousFromStation = fromStationLabel.text
 
-        UIView.animate(withDuration: 0.2, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, animations: {
             self.fromStationLabel.transform = CGAffineTransform(translationX: 0, y: toStationLabelPos - fromStationLabelPos)
             self.toStationLabel.transform = CGAffineTransform(translationX: 0, y:  fromStationLabelPos - toStationLabelPos)
         }, completion: { success in
@@ -128,6 +130,8 @@ class LineView: UIView {
 
             self.fromStationLabel.transform = .identity
             self.toStationLabel.transform = .identity
+
+            self.switchButton.isEnabled = true
         })
     }
 }

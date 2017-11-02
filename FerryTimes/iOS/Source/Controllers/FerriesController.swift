@@ -28,6 +28,6 @@ class FerriesController : UIViewController {
         lineView.top(to: view)
         lineView.right(to: view)
         lineView.left(to: view)
-        lineView.height(FerriesController.lineViewHeight, relation: .equalOrGreater)
+        lineView.height(70, relation: .equalOrGreater)
     }
 }

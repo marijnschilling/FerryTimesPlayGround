@@ -9,6 +9,7 @@ import SweetUIKit
 import QuartzCore
 
 class LineView: UIView {
+
     private lazy var fromTextLabel: UILabel = {
         let fromTextLabel = UILabel(withAutoLayout: true)
         fromTextLabel.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: .systemFont(ofSize: 16), maximumPointSize: 28)
@@ -52,6 +53,8 @@ class LineView: UIView {
     fileprivate lazy var switchButton: UIButton = {
         let switchButton = UIButton()
         switchButton.backgroundColor = .white
+        
+        switchButton.addTarget(self, action: #selector(self.switchAnimation), for: .touchUpInside)
 
         return switchButton
     }()
@@ -73,7 +76,7 @@ class LineView: UIView {
     }
 
     private func addSubviewsAndConstraints() {
-        let buttonSize: CGFloat = 48.0 
+        let buttonSize: CGFloat = 48.0
         let margin: CGFloat = 24.0
 
         addSubview(fromTextLabel)
@@ -94,7 +97,7 @@ class LineView: UIView {
 
         switchButton.size(CGSize(width: buttonSize, height: buttonSize))
         switchButton.layer.masksToBounds = true
-        switchButton.layer.cornerRadius = buttonSize/2
+        switchButton.layer.cornerRadius = buttonSize / 2
 
         switchButton.right(to: self, offset: -margin)
         switchButton.centerY(to: self, offset: 20)
@@ -107,5 +110,24 @@ class LineView: UIView {
         toStationLabel.left(to: self, offset: margin)
         toStationLabel.right(to: self, offset: -margin, relation: .equalOrGreater)
         toStationLabel.bottom(to: self, offset: -margin)
+    }
+
+    @objc func switchAnimation() {
+        let fromStationLabelPos = fromStationLabel.frame.origin.y
+        let toStationLabelPos = toStationLabel.frame.origin.y
+
+        let previousToStation = toStationLabel.text
+        let previousFromStation = fromStationLabel.text
+
+        UIView.animate(withDuration: 0.2, animations: {
+            self.fromStationLabel.transform = CGAffineTransform(translationX: 0, y: toStationLabelPos - fromStationLabelPos)
+            self.toStationLabel.transform = CGAffineTransform(translationX: 0, y:  fromStationLabelPos - toStationLabelPos)
+        }, completion: { success in
+            self.fromStationLabel.text = previousToStation
+            self.toStationLabel.text = previousFromStation
+
+            self.fromStationLabel.transform = .identity
+            self.toStationLabel.transform = .identity
+        })
     }
 }
